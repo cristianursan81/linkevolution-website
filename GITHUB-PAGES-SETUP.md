@@ -1,4 +1,4 @@
-# 🚀 GitHub Pages Deployment Guide for linkevolution.co
+# 🚀 GitHub Pages Deployment Guide for linkevolution.eu
 
 ## Step 1: Create GitHub Repository
 
@@ -27,13 +27,14 @@ git push -u origin main
 
 2. **Configure Pages**:
    - Scroll down to **Pages** section (left sidebar)
-   - **Source**: Select "GitHub Actions"
-   - This will use our automated deployment workflow
+   - **Source**: Select "Deploy from a branch"
+   - **Branch**: Select "main"
+   - **Folder**: Select "/ (root)"
 
 ## Step 4: Configure Custom Domain
 
 1. **In GitHub Pages Settings**:
-   - **Custom domain**: Enter `linkevolution.co`
+   - **Custom domain**: Enter `linkevolution.eu`
    - Click **Save**
    - This creates a CNAME file in your repository
 
@@ -41,7 +42,7 @@ git push -u origin main
 
 1. **Login to Namecheap**:
    - Go to your account: https://ap.www.namecheap.com/
-   - Navigate to Domain List → Manage (for linkevolution.co)
+   - Navigate to Domain List → Manage (for linkevolution.eu)
 
 2. **Advanced DNS Settings**:
    - Click **Advanced DNS** tab
@@ -69,15 +70,15 @@ git push -u origin main
 
 2. **Test Your Website**:
    - Wait 15-30 minutes for DNS propagation
-   - Visit: `https://linkevolution.co`
-   - Also test: `https://www.linkevolution.co`
+   - Visit: `https://linkevolution.eu`
+   - Also test: `https://www.linkevolution.eu`
 
 ## 🎯 What Happens Next
 
 - ✅ **Automatic Deployments**: Every time you push code, the site updates
 - ✅ **Free SSL Certificate**: GitHub provides HTTPS automatically
 - ✅ **Fast Global CDN**: Your site loads quickly worldwide
-- ✅ **Professional Domain**: linkevolution.co is now your business website
+- ✅ **Professional Domain**: linkevolution.eu is now your business website
 
 ## 🔧 Making Updates
 
@@ -93,7 +94,7 @@ Once deployed, visitors can reach you at:
 - ✉️ cristianursan@outlook.es
 - 📱 +34 647 027 418
 - 💬 WhatsApp: +34 647 027 418
-- 🌐 Website: linkevolution.co
+- 🌐 Website: linkevolution.eu
 
 ## 🆘 Troubleshooting
 
@@ -108,4 +109,4 @@ Once deployed, visitors can reach you at:
 
 ## 🎉 Congratulations!
 
-Your professional Linkevolution website will be live at **linkevolution.co** helping you attract clients and grow your digital transformation business! 🚀
+Your professional Linkevolution website will be live at **linkevolution.eu** helping you attract clients and grow your digital transformation business! 🚀

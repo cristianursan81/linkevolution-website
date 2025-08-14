@@ -1,8 +1,8 @@
-# 🚀 Deployment Guide for linkevolution.co
+# 🚀 Deployment Guide for linkevolution.eu
 
 ## 📋 Website Ready for Deployment
 
-Your Linkevolution website is ready to go live on **linkevolution.co**!
+Your Linkevolution website is ready to go live on **linkevolution.eu**!
 
 ### ✅ What's Included
 - Professional business website
@@ -48,7 +48,7 @@ Upload ALL files from the `dist/` folder to your web hosting:
 
 ### 🔧 After Upload
 
-1. **Test your website**: Visit https://linkevolution.co
+1. **Test your website**: Visit https://linkevolution.eu
 2. **Check mobile version**: Test on phone/tablet
 3. **Verify contact forms**: Test email functionality
 4. **Check all pages**: Ensure everything loads correctly
@@ -63,8 +63,8 @@ Upload ALL files from the `dist/` folder to your web hosting:
 ### 🔒 SSL Certificate
 
 Make sure your hosting provider enables HTTPS/SSL for:
-- https://linkevolution.co
-- https://www.linkevolution.co
+- https://linkevolution.eu
+- https://www.linkevolution.eu
 
 ### 📈 SEO & Analytics
 
