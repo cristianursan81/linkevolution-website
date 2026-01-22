@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130" width="100" height="130">
+  <defs>
+    <!-- Gradiente eslabón superior -->
+    <linearGradient id="gradTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2DD4BF"/>
+      <stop offset="50%" stop-color="#14B8A6"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+
+    <!-- Gradiente eslabón inferior -->
+    <linearGradient id="gradBottom" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#134E4A"/>
+      <stop offset="50%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sombra -->
+  <ellipse cx="50" cy="118" rx="14" ry="5" fill="#14B8A6" opacity="0.35"/>
+
+  <!-- Grupo con transformación para rotar ambos eslabones -->
+  <g transform="rotate(-25 50 60)">
+
+    <!-- Eslabón superior - parte trasera -->
+    <path d="M35,10 L35,55 A15,15 0 0 0 65,55 L65,10 A15,15 0 0 0 35,10 Z M42,22 L42,43 A8,8 0 0 0 58,43 L58,22 A8,8 0 0 0 42,22 Z"
+          fill="url(#gradTop)" fill-rule="evenodd"/>
+
+    <!-- Eslabón inferior -->
+    <path d="M35,45 L35,90 A15,15 0 0 0 65,90 L65,45 A15,15 0 0 0 35,45 Z M42,57 L42,78 A8,8 0 0 0 58,78 L58,57 A8,8 0 0 0 42,57 Z"
+          fill="url(#gradBottom)" fill-rule="evenodd"/>
+
+    <!-- Eslabón superior - parte frontal (sobre el inferior) -->
+    <clipPath id="frontClip">
+      <rect x="30" y="48" width="40" height="25"/>
+    </clipPath>
+    <path d="M35,10 L35,55 A15,15 0 0 0 65,55 L65,10 A15,15 0 0 0 35,10 Z M42,22 L42,43 A8,8 0 0 0 58,43 L58,22 A8,8 0 0 0 42,22 Z"
+          fill="url(#gradTop)" fill-rule="evenodd" clip-path="url(#frontClip)"/>
+  </g>
+</svg>

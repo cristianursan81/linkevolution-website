@@ -1,0 +1,22 @@
+# Robots.txt para linkevolution.eu
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://linkevolution.eu/sitemap.xml
+
+# Bloquear acceso a archivos sensibles
+Disallow: /*.json$
+Disallow: /*.map$
+
+# Permitir crawlers de buscadores principales
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
