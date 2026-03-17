@@ -18,7 +18,16 @@ import {
   Globe,
   Settings,
   TrendingUp,
-  Workflow
+  Workflow,
+  ShoppingBag,
+  Plus,
+  Building,
+  ChefHat,
+  Clock,
+  Shield,
+  Heart,
+  Star,
+  Bot
 } from 'lucide-react'
 import './App.css'
 
@@ -85,41 +94,40 @@ function App() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-200">
-                  Transformación Digital
+                  WhatsApp + IA + CRM
                 </Badge>
                 <h1 className="text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
-                  Transforma tu
+                  Automatiza tu negocio.
                   <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
-                    {" "}empresa{" "}
+                    {" "}Crece{" "}
                   </span>
-                  para el mañana
+                  sin contratar más.
                 </h1>
                 <p className="text-xl text-slate-600 leading-relaxed">
-                  Líderes en transformación digital, automatización de procesos y gestión de flujos de trabajo. 
-                  Soluciones innovadoras adaptadas a tu empresa con atención personalizada y resultados garantizados.
+                  WhatsApp, email, voz y CRM — todo en una plataforma diseñada para PYMEs.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-700 hover:to-cyan-700 transform hover:scale-105 transition-all duration-200">
-                  Comenzar Ahora
+                  Empieza gratis
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
                 <Button size="lg" variant="outline" className="border-slate-300 hover:bg-slate-50 transform hover:scale-105 transition-all duration-200">
-                  Ver Casos de Éxito
+                  Cuéntanos tu caso → te proponemos una solución en 24h
                 </Button>
               </div>
               <div className="flex items-center space-x-8 pt-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-slate-900">100+</div>
-                  <div className="text-sm text-slate-600">Proyectos Exitosos</div>
+                  <div className="text-3xl font-bold text-slate-900">500+</div>
+                  <div className="text-sm text-slate-600">negocios automatizados</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-slate-900">99%</div>
-                  <div className="text-sm text-slate-600">Satisfacción Cliente</div>
+                  <div className="text-3xl font-bold text-slate-900">98%</div>
+                  <div className="text-sm text-slate-600">tasa de apertura en WhatsApp</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-slate-900">7+</div>
-                  <div className="text-sm text-slate-600">Años Experiencia</div>
+                  <div className="text-3xl font-bold text-slate-900">&lt; 2s</div>
+                  <div className="text-sm text-slate-600">tiempo de respuesta medio</div>
                 </div>
               </div>
             </div>
@@ -135,6 +143,136 @@ function App() {
         </div>
       </section>
 
+      {/* Use Cases by Sector Section */}
+      <section className="py-20 px-6 bg-gradient-to-br from-slate-50 to-teal-50">
+        <div className="container mx-auto">
+          <div className="text-center space-y-4 mb-16">
+            <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-200">
+              Por Sectores
+            </Badge>
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900">
+              Soluciones para tu
+              <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
+                {" "}sector
+              </span>
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Automatizaciones específicas diseñadas para las necesidades únicas de cada industria
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardHeader className="space-y-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <ShoppingBag className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-xl">Retail y eCommerce</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-base leading-relaxed">
+                  Responde pedidos, recupera carritos abandonados y envía notificaciones de envío por WhatsApp, automáticamente.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardHeader className="space-y-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Plus className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-xl">Clínicas y Salud</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-base leading-relaxed">
+                  Confirma citas, envía recordatorios y gestiona bajas sin intervención manual.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardHeader className="space-y-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-teal-600 to-teal-700 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <Building className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-xl">Inmobiliarias</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-base leading-relaxed">
+                  Califica leads en WhatsApp, agenda visitas y mantén a tus clientes informados en tiempo real.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardHeader className="space-y-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <ChefHat className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-xl">Hostelería y Restauración</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-base leading-relaxed">
+                  Gestiona reservas, responde consultas y lanza campañas de fidelización por WhatsApp.
+                </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Linkevolution Section */}
+      <section className="py-20 px-6 bg-white">
+        <div className="container mx-auto">
+          <div className="text-center space-y-4 mb-16">
+            <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-200">
+              Por qué Linkevolution
+            </Badge>
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900">
+              La plataforma de automatización
+              <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
+                {" "}más completa{" "}
+              </span>
+              para PYMEs
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto">
+                <Clock className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900">IA que trabaja 24/7</h3>
+              <p className="text-slate-600">Tu agente nunca duerme, no descansa y responde en segundos.</p>
+            </div>
+
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto">
+                <Zap className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900">Sin código, sin complicaciones</h3>
+              <p className="text-slate-600">Configura automatizaciones en minutos, no en semanas.</p>
+            </div>
+
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-teal-600 to-teal-700 rounded-full flex items-center justify-center mx-auto">
+                <Heart className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900">Pensado para PYMEs</h3>
+              <p className="text-slate-600">Precios accesibles, soporte real y onboarding guiado.</p>
+            </div>
+
+            <div className="text-center space-y-4">
+              <div className="w-16 h-16 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full flex items-center justify-center mx-auto">
+                <Shield className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900">Ético y seguro</h3>
+              <p className="text-slate-600">Cumplimiento GDPR, datos en Europa, sin venta a terceros.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="servicios" className="py-20 px-6 bg-white">
         <div className="container mx-auto">
@@ -143,13 +281,13 @@ function App() {
               Nuestros Servicios
             </Badge>
             <h2 className="text-4xl lg:text-5xl font-bold text-slate-900">
-              Soluciones que
+              Agentes de IA que
               <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
-                {" "}transforman
+                {" "}automatizzan tu negocio
               </span>
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Ofrecemos servicios especializados en transformación digital para impulsar el crecimiento de tu empresa
+              Ofrecemos agentes de IA especializados para automatizar completamente tu negocio y generar más leads
             </p>
           </div>
 
@@ -157,27 +295,27 @@ function App() {
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardHeader className="space-y-4">
                 <div className="w-12 h-12 bg-gradient-to-r from-teal-500 to-teal-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <TrendingUp className="w-6 h-6 text-white" />
+                  <Bot className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle className="text-xl">Transformación Digital</CardTitle>
+                <CardTitle className="text-xl">Agente de IA WhatsApp</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base leading-relaxed">
-                  Modernizamos tus procesos empresariales mediante tecnologías digitales avanzadas, 
-                  mejorando la eficiencia y competitividad de tu organización.
+                  Tu agente de WhatsApp responde, califica y convierte — incluso mientras duermes.
+                  
                 </CardDescription>
                 <div className="mt-4 space-y-2">
                   <div className="flex items-center text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Análisis de procesos actuales
+                    Respuestas instantáneas 24/7
                   </div>
                   <div className="flex items-center text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Implementación de soluciones digitales
+                    Calificación automática de leads
                   </div>
                   <div className="flex items-center text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Capacitación del equipo
+                    Integración con tu CRM
                   </div>
                 </div>
               </CardContent>
@@ -186,27 +324,26 @@ function App() {
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardHeader className="space-y-4">
                 <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Settings className="w-6 h-6 text-white" />
+                  <Mail className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle className="text-xl">Automatización de Procesos</CardTitle>
+                <CardTitle className="text-xl">Automatización Email & Voz</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base leading-relaxed">
-                  Optimizamos y automatizamos tus procesos operativos para reducir costos, 
-                  eliminar errores y aumentar la productividad de tu equipo.
+                  Campañas de email inteligentes y llamadas automatizadas con IA que suenan completamente humanas.
                 </CardDescription>
                 <div className="mt-4 space-y-2">
                   <div className="flex items-center text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Identificación de procesos manuales
+                    Secuencias de email personalizadas
                   </div>
                   <div className="flex items-center text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Diseño de flujos automatizados
+                    Llamadas automatizadas con IA
                   </div>
                   <div className="flex items-center text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Monitoreo y optimización continua
+                    Seguimiento y métricas en tiempo real
                   </div>
                 </div>
               </CardContent>
@@ -215,28 +352,98 @@ function App() {
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardHeader className="space-y-4">
                 <div className="w-12 h-12 bg-gradient-to-r from-teal-600 to-teal-700 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                  <Workflow className="w-6 h-6 text-white" />
+                  <Users className="w-6 h-6 text-white" />
                 </div>
-                <CardTitle className="text-xl">Gestión de Flujos de Trabajo</CardTitle>
+                <CardTitle className="text-xl">CRM Inteligente Gratuito</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-base leading-relaxed">
-                  Diseñamos y optimizamos flujos de trabajo eficientes que mejoran la colaboración 
-                  y coordinación entre equipos y departamentos.
+                  Un CRM que aprende de cada conversación y te sugiere el siguiente paso.
+                  
                 </CardDescription>
                 <div className="mt-4 space-y-2">
                   <div className="flex items-center text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Mapeo de procesos existentes
+                    Gestión inteligente de contactos
                   </div>
                   <div className="flex items-center text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Optimización de flujos
+                    Sugerencias automáticas de acciones
                   </div>
                   <div className="flex items-center text-sm text-slate-600">
                     <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    Herramientas de seguimiento
+                    Pipeline visual de ventas
                   </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 px-6 bg-gradient-to-br from-slate-50 to-teal-50">
+        <div className="container mx-auto">
+          <div className="text-center space-y-4 mb-16">
+            <Badge className="bg-teal-100 text-teal-700 hover:bg-teal-200">
+              Testimonios
+            </Badge>
+            <h2 className="text-4xl lg:text-5xl font-bold text-slate-900">
+              Lo que dicen nuestros
+              <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">
+                {" "}clientes
+              </span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <blockquote className="text-slate-700 mb-4 italic">
+                  "Desde que implementamos Linkevolution, nuestras ventas han aumentado un 40%. Los clientes aman la atención inmediata por WhatsApp."
+                </blockquote>
+                <div className="border-t pt-4">
+                  <div className="font-semibold text-slate-900">María G.</div>
+                  <div className="text-sm text-slate-600">Directora, Clínica Vitalmed</div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <blockquote className="text-slate-700 mb-4 italic">
+                  "La automatización de WhatsApp nos ha permitido reducir el tiempo de respuesta de horas a segundos. Increíble."
+                </blockquote>
+                <div className="border-t pt-4">
+                  <div className="font-semibold text-slate-900">Carlos R.</div>
+                  <div className="text-sm text-slate-600">CEO, Distribuidora Norte</div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                  ))}
+                </div>
+                <blockquote className="text-slate-700 mb-4 italic">
+                  "El CRM gratuito es mejor que muchas soluciones de pago. La integración con WhatsApp es perfecta."
+                </blockquote>
+                <div className="border-t pt-4">
+                  <div className="font-semibold text-slate-900">Ana L.</div>
+                  <div className="text-sm text-slate-600">Gerente, Inmobiliaria Premium</div>
                 </div>
               </CardContent>
             </Card>
@@ -395,21 +602,20 @@ function App() {
         </div>
       </section>
 
-      {/* CTA Banner Section */}
+      {/* Conversational CTA Section */}
       <section className="py-16 px-6 bg-gradient-to-r from-teal-600 to-cyan-600">
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto text-white space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold">
-              ¿Listo para dar el siguiente paso?
+              ¿No sabes por dónde empezar?
             </h2>
             <p className="text-xl opacity-90">
-              Únete a más de 100 empresas que ya han transformado sus procesos con nosotros. 
-              Agenda tu consulta gratuita hoy mismo.
+              Cuéntanos tu negocio y te diseñamos una automatización a medida en 24 horas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="bg-white text-teal-600 hover:bg-slate-100">
-                <Zap className="mr-2 w-5 h-5" />
-                Consulta Gratuita
+                <Users className="mr-2 w-5 h-5" />
+                Hablar con un experto
               </Button>
               <Button 
                 size="lg" 
