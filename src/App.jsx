@@ -4,7 +4,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input.jsx'
 import { Textarea } from '@/components/ui/textarea.jsx'
 import { Badge } from '@/components/ui/badge.jsx'
-import { 
+import { import TechnicalExpertiseSection from '@/components/TechnicalExpertiseSection.jsx';
+import EngagementModelsSection from '@/components/EngagementModelsSection.jsx';
+import ValuesSection from '@/components/ValuesSection.jsx';
+import
   ArrowRight, 
   CheckCircle, 
   Users, 
