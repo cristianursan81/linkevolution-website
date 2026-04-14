@@ -1,1 +1,24 @@
-node_modules
+node_modules/
+.venv/
+venv/
+
+# Environment variables
+.env
+.env.*
+.env.local
+
+# Build output
+dist/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Secrets & keys
+*.key
+*.pem
+secrets*
+
+# OS files
+.DS_Store
+Thumbs.db
