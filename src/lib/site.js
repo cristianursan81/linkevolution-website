@@ -7,6 +7,7 @@ export const SITE = {
   whatsapp: '34647027418',
   city: 'Madrid, España',
   founder: 'Cristian Ursan',
+  agentUrl: 'https://linkevolution-production.up.railway.app/agent/chat',
 }
 
 export const NAV = [
