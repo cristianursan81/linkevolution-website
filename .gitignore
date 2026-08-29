@@ -1,24 +1,17 @@
 node_modules/
-.venv/
-venv/
-
-# Environment variables
+dist/
+.DS_Store
+Thumbs.db
+*.log
 .env
 .env.*
-.env.local
-
-# Build output
-dist/
-
-# Python cache
+!.env.example
+.venv/
+venv/
 __pycache__/
 *.pyc
-
-# Secrets & keys
 *.key
 *.pem
 secrets*
-
-# OS files
-.DS_Store
-Thumbs.db
+.vscode/
+*.code-workspace
