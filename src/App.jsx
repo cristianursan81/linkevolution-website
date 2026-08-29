@@ -320,7 +320,7 @@ export default function App() {
             </div>
             <Card className="border-0 bg-gradient-to-br from-teal-50 to-cyan-50 shadow-lg">
               <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
-                <img src={logo} alt="" className="h-20 w-20 rounded-2xl bg-white object-contain p-2 shadow-sm" />
+                <img src={logo} alt="Linkevolution" className="h-20 w-20 object-contain" />
                 <div>
                   <p className="text-xl font-bold text-slate-900">{SITE.founder}</p>
                   <p className="text-slate-600">Fundador · {SITE.name}</p>
