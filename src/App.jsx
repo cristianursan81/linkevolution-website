@@ -22,6 +22,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import Header from '@/components/Header.jsx'
 import Footer from '@/components/Footer.jsx'
 import ContactForm from '@/components/ContactForm.jsx'
+import ChatWidget from '@/components/ChatWidget.jsx'
 import logo from '@/assets/logo.png'
 import heroImage from '@/assets/hero.jpg'
 import { SITE, scrollToId, whatsappUrl } from '@/lib/site.js'
@@ -422,6 +423,7 @@ export default function App() {
         </section>
       </main>
       <Footer />
+      <ChatWidget />
     </div>
   )
 }
