@@ -1,4 +1,4 @@
-import logoOnDark from '@/assets/logo-on-dark.png'
+import logo from '@/assets/logo.png'
 import { SITE, scrollToId } from '@/lib/site.js'
 
 export default function Footer() {
@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-12 sm:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-3">
           <div className="flex items-center gap-2">
-            <img src={logoOnDark} alt="Linkevolution" className="h-8 w-8 object-contain" />
+            <img src={logo} alt="Linkevolution" className="h-8 w-8 object-contain" />
             <span className="text-lg font-bold">{SITE.name}</span>
           </div>
           <p className="text-sm leading-relaxed text-slate-400">
