@@ -23,7 +23,7 @@ export default function Header() {
             go('inicio')
           }}
         >
-          <img src={logo} alt="" className="h-9 w-9 rounded-md object-contain" />
+          <img src={logo} alt="Linkevolution" className="h-9 w-9 object-contain" />
           <span className="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-xl font-bold text-transparent">
             {SITE.name}
           </span>
